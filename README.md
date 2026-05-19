@@ -40,8 +40,13 @@ Install the Docker engine if you don't already have it. Instructions for your OS
 # Enable the service and start it
 $ sudo systemctl enable --now docker
 
+# Add your user to the docker group
+$ sudo usermod -aG docker $USER
+
+# Restart your shell and log back in
+
 # Test docker
-$ sudo docker run hello-world
+$ docker run hello-world
 ```
 
 Getting Started
