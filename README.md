@@ -28,6 +28,21 @@ These require `git` to be aware of authentication credentials.
     machine dev.azure.com login api password <azdo access token>
     ```
 
+Install Docker
+--------------
+
+Install the Docker engine if you don't already have it. Instructions for your OS may be found [here](https://docs.docker.com/engine/install/):
+
+```
+# Generic Docker instructions
+# After installing "docker-cli", or possibly "docker-ce-cli" ...
+
+# Enable the service and start it
+$ sudo systemctl enable --now docker
+
+# Test docker
+$ sudo docker run hello-world
+```
 
 Getting Started
 ---------------
